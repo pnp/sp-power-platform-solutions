@@ -1,0 +1,109 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "createSPList",
+        "listName": "Registrations",
+        "templateType": 100,
+        "subactions": [
+          {
+            "verb": "addSPField",
+            "fieldType": "Text",
+            "displayName": "Invitee Organization",
+            "internalName ": "Invitee_x0020_Organization",
+            "isRequired": false,
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPField",
+            "fieldType": "Text",
+            "displayName": "Invitee Email Address",
+            "internalName ": "Invitee_x0020_Email_x0020_Addres",
+            "isRequired": false,
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPField",
+            "fieldType": "Text",
+            "displayName": "Invitee City",
+            "internalName ": "Invitee_x0020_City",
+            "isRequired": false,
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPField",
+            "fieldType": "Text",
+            "displayName": "Invitee Street Address",
+            "internalName ": "Invitee_x0020_Street_x0020_Address",
+            "isRequired": false,
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPField",
+            "fieldType": "Text",
+            "displayName": "Invitee Zip Code",
+            "internalName ": "Invitee_x0020_Zip_x0020_Code",
+            "isRequired": false,
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPField",
+            "fieldType": "Text",
+            "displayName": "Invitee Phone Number",
+            "internalName ": "Invitee_x0020_Phone_x0020_Number",
+            "isRequired": false,
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPField",
+            "fieldType": "Text",
+            "displayName": "Invitee Name",
+            "internalName ": "Invitee_x0020_Name",
+            "isRequired": false,
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field Type=\"Choice\" DisplayName=\"Invitee State\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"FALSE\" StaticName=\"Invitee_x0020_State\" Name=\"Invitee_x0020_State\"><Default>California</Default><CHOICES><CHOICE>Alabama</CHOICE><CHOICE>Alaska</CHOICE><CHOICE>Arizona</CHOICE><CHOICE>Arkansas</CHOICE><CHOICE>California</CHOICE><CHOICE>Colorado</CHOICE><CHOICE>Connecticut</CHOICE><CHOICE>Delaware</CHOICE><CHOICE>Florida</CHOICE><CHOICE>Georgia</CHOICE><CHOICE>Hawaii</CHOICE><CHOICE>Idaho</CHOICE><CHOICE>Illinois</CHOICE><CHOICE>Indiana</CHOICE><CHOICE>Iowa</CHOICE><CHOICE>Kansas</CHOICE><CHOICE>Kentucky</CHOICE><CHOICE>Louisiana</CHOICE><CHOICE>Maine</CHOICE><CHOICE>Maryland</CHOICE><CHOICE>Massachusetts</CHOICE><CHOICE>Michigan</CHOICE><CHOICE>Minnesota</CHOICE><CHOICE>Mississippi</CHOICE><CHOICE>Missouri</CHOICE><CHOICE>Montana</CHOICE><CHOICE>Nebraska</CHOICE><CHOICE>Nevada</CHOICE><CHOICE>NewHampshire</CHOICE><CHOICE>NewJersey</CHOICE><CHOICE>NewMexico</CHOICE><CHOICE>NewYork</CHOICE><CHOICE>NorthCarolina</CHOICE><CHOICE>NorthDakota</CHOICE><CHOICE>Ohio</CHOICE><CHOICE>Oklahoma</CHOICE><CHOICE>Oregon</CHOICE><CHOICE>Pennsylvania</CHOICE><CHOICE>RhodeIsland</CHOICE><CHOICE>SouthCarolina</CHOICE><CHOICE>SouthDakota</CHOICE><CHOICE>Tennessee</CHOICE><CHOICE>Texas</CHOICE><CHOICE>Utah</CHOICE><CHOICE>Vermont</CHOICE><CHOICE>Virginia</CHOICE><CHOICE>Washington</CHOICE><CHOICE>WestVirginia</CHOICE><CHOICE>Wisconsin</CHOICE><CHOICE>Wyoming</CHOICE></CHOICES></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field Type=\"Choice\" DisplayName=\"Invitee Status\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"FALSE\" StaticName=\"Invitee_x0020_Status\" Name=\"Invitee_x0020_Status\"><Default>Registered</Default><CHOICES><CHOICE>Invited</CHOICE><CHOICE>Registered</CHOICE><CHOICE>Checkedin</CHOICE></CHOICES></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field Type=\"Choice\" Name=\"Reminder\" FromBaseType=\"FALSE\"  DisplayName=\"Reminder\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" Format=\"Dropdown\" FillInChoice=\"FALSE\" StaticName=\"Reminder\"><Default>Yes</Default><CHOICES><CHOICE>Yes</CHOICE><CHOICE>No</CHOICE></CHOICES></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field Type=\"DateTime\" DisplayName=\"Event Day\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" Format=\"DateOnly\" FriendlyDisplayFormat=\"Disabled\" StaticName=\"Event_x0020_Day\" Name=\"Event_x0020_Day\"><Default>2019-09-29T00:00:00Z</Default></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPView",
+            "name": "All Items - customized",
+            "viewFields": [
+                "Invitee_x0020_Organization",
+                "Invitee_x0020_Email_x0020_Addres",
+                "Invitee_x0020_Street_x0020_Addre",
+                "Invitee_x0020_City",
+                "Invitee_x0020_State",
+                "Invitee_x0020_Zip_x0020_Code",
+                "Invitee_x0020_Phone_x0020_Number",
+                "Invitee_x0020_Name",
+                "Invitee_x0020_Status",
+                "Reminder"
+            ],
+            "query":"",
+            "isPaged": true,
+            "makeDefault": true,
+            "rowLimit": 100
+          }
+        ]
+      }
+    ],
+    "version": 1
+  }

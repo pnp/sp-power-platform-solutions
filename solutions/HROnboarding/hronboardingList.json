@@ -1,0 +1,87 @@
+{
+    "$schema": "schema.json",
+    "actions": [
+      {
+        "verb": "createSPList",
+        "listName": "HR Onboarding",
+        "templateType": 100,
+        "subactions": [
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Last Name\" Format=\"Dropdown\" MaxLength=\"255\" Title=\"Last Name\" Type=\"Text\" StaticName=\"Last_x0020_Name\" Name=\"Last_x0020_Name\" />",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"First Name\" Format=\"Dropdown\" MaxLength=\"255\" Title=\"First Name\" Type=\"Text\" StaticName=\"First_x0020_Name\" Name=\"First_x0020_Name\" />",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Personal Email\" Format=\"Dropdown\" MaxLength=\"255\" Title=\"Personal Email\" Type=\"Text\" StaticName=\"Personal_x0020_Email\" Name=\"Personal_x0020_Email\" />",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Manager\" Format=\"Dropdown\" List=\"UserInfo\" Title=\"Manager\" Type=\"User\" UserSelectionMode=\"0\" UserSelectionScope=\"0\" StaticName=\"Manager\" Name=\"Manager\" />",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Start Date\" FriendlyDisplayFormat=\"Disabled\" Format=\"DateOnly\" Title=\"Start Date\" Type=\"DateTime\" StaticName=\"Start_x0020_Date\" Name=\"Start_x0020_Date\"><Default>[today]</Default></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Equipment Delivery Status\" FillInChoice=\"FALSE\" Format=\"Dropdown\" Title=\"Equipment Delivery Status\" Type=\"Choice\" StaticName=\"Equipment_x0020_Delivery_x0020_S\" Name=\"Equipment_x0020_Delivery_x0020_S\" ><CHOICES><CHOICE>In Progress</CHOICE><CHOICE>Completed</CHOICE></CHOICES><Default>In Progress</Default></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Account Setup Status\" FillInChoice=\"FALSE\" Format=\"Dropdown\" Title=\"Account Setup Status\" Type=\"Choice\" StaticName=\"Account_x0020_Setup_x0020_Status\" Name=\"Account_x0020_Setup_x0020_Status\" ><CHOICES><CHOICE>In Progress</CHOICE><CHOICE>Completed</CHOICE></CHOICES><Default>In Progress</Default></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Equipment Delivery Status\" FillInChoice=\"FALSE\" Format=\"Dropdown\" Title=\"Equipment Delivery Status\" Type=\"Choice\" StaticName=\"Equipment_x0020_Delivery_x0020_S\" Name=\"Equipment_x0020_Delivery_x0020_S\" ><CHOICES><CHOICE>In Progress</CHOICE><CHOICE>Completed</CHOICE></CHOICES><Default>In Progress</Default></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Email Address Assignment Status\" FillInChoice=\"FALSE\" Format=\"Dropdown\" Title=\"Email Address Assignment Status\" Type=\"Choice\" StaticName=\"Email_x0020_Address_x0020_Assign\" Name=\"Email_x0020_Address_x0020_Assign\" ><CHOICES><CHOICE>In Progress</CHOICE><CHOICE>Completed</CHOICE></CHOICES><Default>In Progress</Default></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field DisplayName=\"Video Training Status\" FillInChoice=\"FALSE\" Format=\"Dropdown\" Title=\"Video Training Status\" Type=\"Choice\" StaticName=\"Video_x0020_Training_x0020_Statu\" Name=\"Video_x0020_Training_x0020_Statu\"><CHOICES><CHOICE>In Progress</CHOICE><CHOICE>Completed</CHOICE></CHOICES></Field>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPFieldXml",
+            "schemaXml": "<Field Type=\"Text\" MaxLength=\"255\" DisplayName=\"Onboarding Status\" StaticName=\"Onboarding_x0020_Status\" Name=\"Onboarding_x0020_Status\"/>",
+            "addToDefaultView": true
+          },
+          {
+            "verb": "addSPView",
+            "name": "All Items - customized",
+            "viewFields": [
+                "Last_x0020_Name",
+                "First_x0020_Name",
+                "Manager",
+                "Start_x0020_Date",
+                "Equipment_x0020_Delivery_x0020_S",
+                "Account_x0020_Setup_x0020_Status",
+                "Email_x0020_Address_x0020_Assign",
+                "Video_x0020_Training_x0020_Statu",
+                "Onboarding_x0020_Status"
+            ],
+            "query": "",
+            "isPaged": true,
+            "makeDefault": true,
+            "rowLimit": 100
+          }
+        ]
+      }
+    ],
+    "version": 1
+  }

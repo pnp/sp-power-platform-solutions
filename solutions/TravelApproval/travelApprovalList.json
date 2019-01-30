@@ -1,0 +1,69 @@
+{
+    "$schema": "schema.json",
+    "actions": [{
+        "verb": "createSPList",
+        "listName": "Travel",
+        "templateType": 100,
+        "subactions": [{
+                "verb": "addSPFieldXml",
+                "schemaXml": "<Field Name=\"Location_x0020_Travel_x0020_To\" DisplaceOnUpgrade=\"TRUE\" DisplayName=\"Location Travel To\" Type=\"Text\" StaticName=\"Location_x0020_Travel_x0020_To\"/>",
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPFieldXml",
+                "schemaXml": "<Field Name=\"Description\" DisplaceOnUpgrade=\"TRUE\" DisplayName=\"Description\" Type=\"Text\" StaticName=\"Description\"/>",
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPFieldXml",
+                "schemaXml": "<Field Description=\"When is user leaving\" DisplaceOnUpgrade=\"TRUE\" DisplayName=\"Start Travel Date\" FriendlyDisplayFormat=\"Disabled\" Format=\"DateOnly\" Title=\"Start Travel Date\" Type=\"DateTime\" StaticName=\"Start_x0020_Travel_x0020_Date\" Name=\"Start_x0020_Travel_x0020_Date\" />",
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPFieldXml",
+                "schemaXml": "<Field Description=\"When user is returning\" DisplaceOnUpgrade=\"TRUE\" DisplayName=\"End Travel Date\" FriendlyDisplayFormat=\"Disabled\" Format=\"DateOnly\" Title=\"End Travel Date\" Type=\"DateTime\" StaticName=\"End_x0020_Travel_x0020_Date\" Name=\"End_x0020_Travel_x0020_Date\" />",
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPFieldXml",
+                "schemaXml": "<Field Description=\"How much will the trip cost\" DisplaceOnUpgrade=\"TRUE\" DisplayName=\"Anticipated Cost\" Title=\"Anticipated Cost\" Type=\"Currency\" StaticName=\"Anticipated_x0020_Cost\" Name=\"Anticipated_x0020_Cost\" />",
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPFieldXml",
+                "schemaXml": "<Field Type=\"Choice\" DisplayName=\"Status\" DisplaceOnUpgrade=\"TRUE\" Required=\"FALSE\" Format=\"Dropdown\" StaticName=\"Status\" Name=\"Status\"><Default>Pending Manager Approval</Default><CHOICES><CHOICE>Pending Manager Approval</CHOICE><CHOICE>Pending Travel Group Approval</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Declined</CHOICE></CHOICES></Field>",
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPFieldXml",
+                "schemaXml": "<Field Description=\"Name of Travel Group Approver\" DisplaceOnUpgrade=\"TRUE\" DisplayName=\"Travel Group Approver\" Format=\"Dropdown\" List=\"UserInfo\" Title=\"Travel Group Approver\" Type=\"User\" UserSelectionMode=\"PeopleAndGroups\" UserSelectionScope=\"0\" StaticName=\"Travel_x0020_Group_x0020_Approve\" Name=\"Travel_x0020_Group_x0020_Approve\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"ImnName\"/>",
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPFieldXml",
+                "schemaXml": "<Field Description=\"Name of Manager\" DisplaceOnUpgrade=\"TRUE\" DisplayName=\"Manager Alias\" Format=\"Dropdown\" List=\"UserInfo\" Title=\"Manager Alias\" Type=\"User\" UserSelectionMode=\"PeopleAndGroups\" UserSelectionScope=\"0\" StaticName=\"Manager_x0020_Alias\" Name=\"Manager_x0020_Alias\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" ShowField=\"ImnName\"/>",
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPView",
+                "name": "All Items - customized",
+                "viewFields": [
+                    "Title_x0020_of_x0020_Request",
+                    "Description",
+                    "Start_x0020_Travel_x0020_Date",
+                    "Location_x0020_Travel_x0020_To",
+                    "End_x0020_Travel_x0020_Date",
+                    "Anticipated_x0020_Cost",
+                    "Travel_x0020_Group_x0020_Approve",
+                    "Manager_x0020_Alias",
+                    "Status"
+                ],
+                "query": "",
+                "isPaged": true,
+                "makeDefault": true,
+                "rowLimit": 100
+            }
+        ]
+    }],
+    "version": 1
+}
