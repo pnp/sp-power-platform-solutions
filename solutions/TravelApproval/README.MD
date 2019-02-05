@@ -9,7 +9,7 @@ If you would like to see a demonstration of this process please watch [this inst
 ## Travel Approval PowerApps sample overview
 The Travel Request PowerApp allows company employees to easily submit travel requests from desktop or mobile devices. Travel Requests are automatically routed to the appropriate Manager and Travel Department for approval. This reduces processing time. Managers can also access status reports for all travel requests to verify current status and manage the travel budget.
 
-![Opening screen of the Travel Approval PowerApp](./*.png)
+![Opening screen of the Travel Approval PowerApp](./media/powerapp-preview.png)
 
 Watch the [Travel Approval Demo Video](https://youtu.be/SKglBGHCKJ0) to see how to use the Travel Approval PowerApp Sample.
 
