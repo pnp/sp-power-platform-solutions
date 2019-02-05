@@ -10,7 +10,7 @@ If you would like to see a demonstration of this process please watch [this inst
 The HR Onboarding App is designed to streamline and simplify the process of bringing a new employee onboard into the organization. In many organizations, onboarding new employees can be a complicated and laborious process. Multiple departments are typically involved leading to missed steps and other delays. In the past, Contoso has left many employees waiting for days to receive the equipment and training necessary for day-to-day work, such as their primary laptop computer, or training on key operating systems. In a few cases, this has meant that new employees are waiting for up-to a week to begin any actual work. 
 After reviewing the current on boarding process, as well as feedback from employees and department heads, Contoso management has authorized the creation of a new business application to improve the entire on boarding experience for both new employees and the business. 
 
-    ![Opening screen of the HR Onboarding PowerApp](./media/hronboarding-homepage.png)
+![Opening screen of the HR Onboarding PowerApp](./media/hronboarding-homepage.png)
 
 Watch the [HR Onboarding Demo Video](https://youtu.be/QWuR8NxwYmU) to see how to use the HR Onboarding PowerApp Sample.
 
