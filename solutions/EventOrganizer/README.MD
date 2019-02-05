@@ -11,7 +11,7 @@ The Event Creation and Management PowerApp enables event managers and other user
 
 ![Opening screen of the Event Organizer PowerApp](./media/event-organizer/Login-screen.png)
 
-Watch the [Event Organizer Demo Video](https://youtu.be/ZEZ9ErUS6sg)] to see how to use the Event Organizer PowerApp Sample.
+Watch the [Event Organizer Demo Video](https://youtu.be/ZEZ9ErUS6sg) to see how to use the Event Organizer PowerApp Sample.
 
 ## Prerequisites
 
@@ -453,7 +453,7 @@ This list stores the registrations for events.
 4. Click **Play**. 
 5. Click **Allow**.
 
-Watch the [Event Organizer Demo Video](https://youtu.be/ZEZ9ErUS6sg)] to see how to use the Event Organizer PowerApp Sample.
+Watch the [Event Organizer Demo Video](https://youtu.be/ZEZ9ErUS6sg) to see how to use the Event Organizer PowerApp Sample.
 
 ## Embed the PowerApp into a SharePoint page
 
