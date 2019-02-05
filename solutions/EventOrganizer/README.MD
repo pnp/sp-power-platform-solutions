@@ -4,18 +4,14 @@ Step-by-step instructions for installing and configuring the Event Organizer Pow
 
 Estimated time to complete these steps: **25-30 minutes**
 
-If you would like to see a demonstration of this process please watch this video.
-
-[![Event Organizer Install Video](./media/event-organizer/temp.png)](https://youtu.be/z4cdtD6hB_4)
+If you would like to see a demonstration of this process please watch [this installation and setup video](https://youtu.be/e7zxMX9DDro).
 
 ## Event Organizer PowerApps sample overview
 The Event Creation and Management PowerApp enables event managers and other users to easily organize events like a corporate conference or trade fair. Event attendees can self-register quickly and easily, and they can sign up to receive updates about conference news, special sessions, and general information. Event managers can track registrations, check-in event participants, and access real-time statistics about event attendance.
 
 ![Opening screen of the Event Organizer PowerApp](./media/event-organizer/Login-screen.png)
 
-Watch this video to see how to use the Event Organizer PowerApp Sample.
-
-[![Event Organizer Demo Video](./media/event-organizer/temp.png)](https://youtu.be/sl5fXwwnvzI)
+Watch the [Event Organizer Demo Video](https://youtu.be/ZEZ9ErUS6sg)] to see how to use the Event Organizer PowerApp Sample.
 
 ## Prerequisites
 
@@ -457,9 +453,7 @@ This list stores the registrations for events.
 4. Click **Play**. 
 5. Click **Allow**.
 
-Watch this video to see how to use the Event Organizer sample.
-
-[![Event Organizer Demo Video](./media/event-organizer/temp.png)](https://youtu.be/sl5fXwwnvzI)
+Watch the [Event Organizer Demo Video](https://youtu.be/ZEZ9ErUS6sg)] to see how to use the Event Organizer PowerApp Sample.
 
 ## Embed the PowerApp into a SharePoint page
 
