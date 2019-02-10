@@ -177,7 +177,7 @@ This list stores the registrations for events.
 31. In the **Dashboard name** textbox enter Event Organizer Dashboard.
 32. Click **Pin**.
 
-    ![Create dashboard](./media/event-organizer/PowerBI-create-dashboard.png)
+    ![Create dashboard](./media/event-organizer/powerbi-create-dashboard.png)
 
 33. Click the **ellipses** next to **Event Organizer** in DATASETS, then click **SCHEDULE REFRESH**
 
