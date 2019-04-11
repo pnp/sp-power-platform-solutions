@@ -4,18 +4,14 @@ Step-by-step instructions for installing and configuring the Event Organizer Pow
 
 Estimated time to complete these steps: **25-30 minutes**
 
-If you would like to see a demonstration of this process please watch this video.
-
-[![Event Organizer Install Video](./media/event-organizer/temp.png)](https://youtu.be/z4cdtD6hB_4)
+If you would like to see a demonstration of this process please watch [this installation and setup video](https://youtu.be/e7zxMX9DDro).
 
 ## Event Organizer PowerApps sample overview
 The Event Creation and Management PowerApp enables event managers and other users to easily organize events like a corporate conference or trade fair. Event attendees can self-register quickly and easily, and they can sign up to receive updates about conference news, special sessions, and general information. Event managers can track registrations, check-in event participants, and access real-time statistics about event attendance.
 
 ![Opening screen of the Event Organizer PowerApp](./media/event-organizer/Login-screen.png)
 
-Watch this video to see how to use the Event Organizer PowerApp Sample.
-
-[![Event Organizer Demo Video](./media/event-organizer/temp.png)](https://youtu.be/sl5fXwwnvzI)
+Watch the [Event Organizer Demo Video](https://youtu.be/ZEZ9ErUS6sg) to see how to use the Event Organizer PowerApp Sample.
 
 ## Prerequisites
 
@@ -23,7 +19,12 @@ Watch this video to see how to use the Event Organizer PowerApp Sample.
 - A SharePoint Online global administrator account.
 - Have a Power BI account and Power BI Desktop installed.
 - Clone the project to your local machine.
-
+- Should be familiar with the following
+    - Configuring Forms
+    - PowerApps
+    - Flow
+    - Power BI
+    - SharePoint
 ## Create the Registrations SharePoint list
 
 This list stores the registrations for events.
@@ -104,6 +105,9 @@ This list stores the registrations for events.
     > **Note:** If the SharePoint list is empty, Power BI can not publish the report successfully in the next step.
 
 ## Create a Power BI workspace
+
+[Download Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
+
 1. Open a web browser and go to https://app.powerbi.com.
 2. Sign in with an account that has a Power BI Pro license.
 3. Click **Workspaces**.
@@ -173,7 +177,18 @@ This list stores the registrations for events.
 31. In the **Dashboard name** textbox enter Event Organizer Dashboard.
 32. Click **Pin**.
 
-    ![Create dashboard](./media/event-organizer/PowerBI-create-dashboard.png)
+    ![Create dashboard](./media/event-organizer/powerbi-create-dashboard.png)
+
+33. Click the **ellipses** next to **Event Organizer** in DATASETS, then click **SCHEDULE REFRESH**
+
+    ![Power BI Refresh Now](./media/event-organizer/refreshnow.png)
+
+34. **Edit credentials** in Data source credentials and turn on **Keep your data update to date** in Scheduled refresh section and click **Apply** button to save changes
+
+    ![Power BI Schedule Refresh](./media/event-organizer/schedule.png)
+
+35. Click the **ellipses** next to **Event Organizer** in DATASETS, then click **REFRESH NOW**
+
 
 ## In PowerApps create a SharePoint connection
 
@@ -254,13 +269,13 @@ This list stores the registrations for events.
 9. Click **File**.
 10. Click **Save**.
 
-### Configure the Power BI report
+### Embed the Power BI report into PowerApps
 
 1. In the **Screens** pane, select the **Reports Screen**.
 
     ![PowerApp Selct Power BI control](./media/event-organizer/powerapp-select-powerbi.png)
 
-2.  Select the existing **PowerBI2** control and edit it's properties.
+2.  Select the existing Power BI control and edit it's properties.
 3.  In the **Properties pane**, click the URL that appears next to the Data label.
 4.  In the **Workspace** dropdown, select **Event Organizer**.
 5.  In the **Dashboard** dropdown, select **Event Organizer Dashboard**.
@@ -410,6 +425,9 @@ This list stores the registrations for events.
 5.	Expand the **Get SharePoint items 2 days prior to the event** action. 
 6.	Change the **Site Address** and **List Name** to match the Registrations SharePoint list you created.
 	
+    >**Note:** Don't forget to update the body text of the email
+
+
 	![Edit Flow screen](./media/event-organizer/edit-flow-getitems.png)
 
 	>**Note:** You don’t need to type it manually, you can choose it in the dropdown lists.
@@ -457,9 +475,7 @@ This list stores the registrations for events.
 4. Click **Play**. 
 5. Click **Allow**.
 
-Watch this video to see how to use the Event Organizer sample.
-
-[![Event Organizer Demo Video](./media/event-organizer/temp.png)](https://youtu.be/sl5fXwwnvzI)
+Watch the [Event Organizer Demo Video](https://youtu.be/ZEZ9ErUS6sg) to see how to use the Event Organizer PowerApp Sample.
 
 ## Embed the PowerApp into a SharePoint page
 

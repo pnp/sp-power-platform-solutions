@@ -14,9 +14,7 @@ After reviewing the current on boarding process, as well as feedback from employ
 
 ![Opening screen of the HR Onboarding PowerApp](./media/hronboarding-homepage.png)
 
-Watch this video to see how to use the HR Onboarding PowerApp Sample.
-
-[![HR Onboarding Demo Video](./media/temp.png)](https://localhost)
+Watch the [HR Onboarding Demo Video](https://youtu.be/QWuR8NxwYmU) to see how to use the HR Onboarding PowerApp Sample.
 
 ## Prerequisites
 
@@ -353,10 +351,7 @@ The HR Onboarding list stores all the onboarding new employees for this app.
 
     ![Powerapps play](./media/powerapp-play.png)
 
-Watch this video to see how to use the HR Onboarding PowerApp Sample.
-
-    [![HR Onboarding Demo Video](./media/temp.png)](https://youtu.be/sl5fXwwnvzI)
-
+Watch the [HR Onboarding Demo Video](https://youtu.be/QWuR8NxwYmU) to see how to use the HR Onboarding PowerApp Sample.
 
 ## Embed the PowerApp into a SharePoint page
 

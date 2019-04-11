@@ -4,18 +4,14 @@ Step-by-step instructions for installing and configuring the Travel Approval Pow
 
 Estimated time to complete these steps: **25-30 minutes**
 
-If you would like to see a demonstration of this process, please watch this video.
-
-[![Travel Approval Install Video](./media/event-organizer/temp.png)](https://localhost )
+If you would like to see a demonstration of this process please watch [this installation and setup video](https://youtu.be/3co0uUdf3tk).
 
 ## Travel Approval PowerApps sample overview
 The Travel Request PowerApp allows company employees to easily submit travel requests from desktop or mobile devices. Travel Requests are automatically routed to the appropriate Manager and Travel Department for approval. This reduces processing time. Managers can also access status reports for all travel requests to verify current status and manage the travel budget.
 
-![Opening screen of the Travel Approval PowerApp](./*.png)
+![Opening screen of the Travel Approval PowerApp](./media/powerapp-preview.png)
 
-Watch this video to see how to use the Travel Approval PowerApp Sample.
-
-[![Travel Approval Demo Video](./media/event-organizer/temp.png)](https://localhost)
+Watch the [Travel Approval Demo Video](https://youtu.be/SKglBGHCKJ0) to see how to use the Travel Approval PowerApp Sample.
 
 ## Prerequisites
 
@@ -337,9 +333,7 @@ This list stores all the travel requests.
 
     ![Powerapps play](./media/powerapp-play.png)
 
-Watch this video to see how to use the Travel Request PowerApp Sample.
-
-[![Travel Request Demo Video](./media/temp.png)](https://youtu.be/sl5fXwwnvzI)
+Watch the [Travel Approval Demo Video](https://youtu.be/SKglBGHCKJ0) to see how to use the Travel Approval PowerApp Sample.
 
 ## Next steps
 - [Customize a SharePoint list form](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
