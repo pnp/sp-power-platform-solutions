@@ -6,7 +6,7 @@ Estimated time to complete these steps: **25-35 minutes**
 
 If you would like to see a demonstration of this process, please watch this video.
 
-[![HR Onboarding Install Video](./media/event-organizer/temp.png)](https://www.youtube.com/watch?v=eLAALc4pU_Y)
+[HR Onboarding Install Video](https://www.youtube.com/watch?v=eLAALc4pU_Y)
 
 ## HR Onboarding PowerApps sample overview
 The HR Onboarding App is designed to streamline and simplify the process of bringing a new employee onboard into the organization. In many organizations, onboarding new employees can be a complicated and laborious process. Multiple departments are typically involved leading to missed steps and other delays. In the past, Contoso has left many employees waiting for days to receive the equipment and training necessary for day-to-day work, such as their primary laptop computer, or training on key operating systems. In a few cases, this has meant that new employees are waiting for up-to a week to begin any actual work. 
