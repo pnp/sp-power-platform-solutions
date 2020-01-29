@@ -1,6 +1,6 @@
-# SharePoint PowerApps Solutions
+# SharePoint Power Platform Solutions
 
-This repository contains PowerApps solution samples which demonstrates different scenarios. 
+This repository contains Power Platform solution samples which demonstrates different scenarios. Includes Power Apps, Power Automate and possibly Power BI samples in future. 
 
 # Contributing
 
