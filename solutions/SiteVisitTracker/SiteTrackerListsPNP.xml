@@ -1,0 +1,822 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.13.1909.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-17913BA675AA404C9C6369AEDB755835">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-17913BA675AA404C9C6369AEDB755835" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Home" Url="{site}" />
+            <pnp:NavigationNode Title="Conversations" Url="{site}/_layouts/15/groupstatus.aspx?Target=CONVERSATIONS&amp;Source=QuickLaunch" IsExternal="true" />
+            <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Notebook" Url="{site}/_layouts/15/groupstatus.aspx?Target=NOTEBOOK" IsExternal="true" />
+            <pnp:NavigationNode Title="Pages" Url="{site}/SitePages/Forms/ByAuthor.aspx" />
+            <pnp:NavigationNode Title="VisitLog" Url="{site}/Lists/VisitLog/ThisWeek.aspx" />
+            <pnp:NavigationNode Title="VisitPhotos" Url="{site}/Lists/VisitPhotos/AllItems.aspx" />
+            <pnp:NavigationNode Title="Follow Up" Url="{site}/Lists/Follow Up/AllItems.aspx" />
+            <pnp:NavigationNode Title="Locations" Url="{site}/Lists/Locations/AllItems.aspx" />
+            <pnp:NavigationNode Title="PhotoLib" Url="{site}/PhotoLib/Forms/Latest10.aspx" />
+            <pnp:NavigationNode Title="QuickLink" Url="{site}/Lists/QuickLink/AllItems.aspx" />
+            <pnp:NavigationNode Title="Onsite contacts" Url="{site}/Lists/Site Contact/AllItems.aspx" />
+            <pnp:NavigationNode Title="Site contents" Url="{site}/_layouts/15/viewlsts.aspx" IsExternal="true" />
+            <pnp:NavigationNode Title="Recent" Url="" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Follow Up" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Follow Up" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Follow Up/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Follow Up/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Follow Up/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">None needed</pnp:DataValue>
+              <pnp:DataValue FieldName="FollowUpActions">None needed</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Call back</pnp:DataValue>
+              <pnp:DataValue FieldName="FollowUpActions">Call back</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Schedule next visit</pnp:DataValue>
+              <pnp:DataValue FieldName="FollowUpActions">Schedule next visit</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>          
+          <pnp:Views>
+            <View Name="{765B1154-3FEF-49EE-B41E-88F561601EDA}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Follow Up/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="FollowUpActions" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Follow Up Actions" Format="Dropdown" MaxLength="255" Name="FollowUpActions" Required="TRUE" Title="Follow Up Actions" Type="Text" ID="{ef6eb582-df89-4114-a02e-13eff9ab7446}" SourceID="{{listid:Follow Up}}" StaticName="FollowUpActions" ColName="nvarchar4" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Locations" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Locations" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Locations/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Locations/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Locations/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{A0C0807D-80C8-4020-9C9A-52DB79C85D9F}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Locations/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="LocationName" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Location Name" Format="Dropdown" MaxLength="255" Name="LocationName" Title="Location Name" Type="Text" ID="{44f813bf-ebbf-4f24-b00a-55272bca7539}" SourceID="{{listid:Locations}}" StaticName="LocationName" ColName="nvarchar4" RowOrdinal="0" CustomFormatter="" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Version="1" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="PhotoLib" Description="" DocumentTemplate="{site}/PhotoLib/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="PhotoLib" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/PhotoLib/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/PhotoLib/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/PhotoLib/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{EA8D8B9D-5B32-44F8-B0DF-FEE80BB55B22}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/PhotoLib/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{420DFDC5-5EAF-4CCB-948E-CA0F0A8FBE92}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="Latest10" Url="{site}/PhotoLib/Forms/Latest10.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideColumnHeader": true,
+  "hideSelection": true,
+  "rowFormatter": {
+    "elmType": "button",
+    "customRowAction": {
+      "action": "defaultClick"
+    },
+    "attributes": {
+      "class": "ms-bgColor-white ms-fontColor-white--hover"
+    },
+    "style": {
+      "padding": "0 0 0 0",
+      "margin": "0 5px 0 5px",
+      "cursor": "pointer",
+      "float": "left"
+    },
+    "children": [
+      {
+        "elmType": "img",
+        "attributes": {
+          "src": "@thumbnail.large"
+        },
+        "style": {
+          "height": "128px"
+        }
+      }
+    ]
+  }
+}]]></CustomFormatter>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:PhotoLib}}" StaticName="MediaServiceAutoTags" ColName="nvarchar13" RowOrdinal="0" />
+            <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="Extracted Text" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:PhotoLib}}" StaticName="MediaServiceOCR" ColName="ntext2" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroupid}" RoleDefinition="Read" />
+              <pnp:RoleAssignment Principal="{associatedmembergroupid}" RoleDefinition="Edit" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="QuickLink" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/QuickLink" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/QuickLink/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/QuickLink/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/QuickLink/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{85B85C3F-2AA8-475C-8038-8EFB6D31AD2A}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/QuickLink/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="LinkedUrl" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <ViewStyle ID="15" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[{
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "a",
+    "style": {
+      "font-family": "Segoe UI",
+      "outline": "none",
+      "margin-bottom": "=if(@rowIndex == 1, '0px','20px')",
+      "text-decoration": "none"
+    },
+    "attributes": {
+      "href": "[$LinkedUrl]"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "280px",
+          "height": "68px",
+          "padding": "14px 12px",
+          "border-radius": "2px",
+          "border": "solid 1px #8a8886",
+          "background-color": "#ffffff"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "padding": "14px 0 0 12px",
+              "font-size": "14px",
+              "font-weight": "600",
+              "color": "#323130"
+            },
+            "txtContent": "[$Title]"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "padding": "0 0 0 12px",
+              "font-size": "12px",
+              "color": "#605d59"
+            },
+            "txtContent": "[$LinkedUrl.desc]"
+          }
+        ]
+      }
+    ]
+  }
+}]]></CustomFormatter>
+            </View>
+            <View Name="{1A953D00-43D1-402C-A5DB-67F33D1B554D}" MobileView="TRUE" Type="HTML" DisplayName="QuickLinkView" Url="{site}/Lists/QuickLink/QuickLinkView.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="LinkedUrl" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="LinkedUrl" Format="Hyperlink" Name="LinkedUrl" Title="LinkedUrl" Type="URL" ID="{0a5ec3d4-a5e4-490f-8f34-b9e3a453dd0f}" SourceID="{{listid:QuickLink}}" StaticName="LinkedUrl" ColName="nvarchar4" RowOrdinal="0" ColName2="nvarchar5" RowOrdinal2="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Onsite contacts" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Site Contact" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Site Contact/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Site Contact/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Site Contact/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{5C8BE759-5C98-481A-8417-A234E82E7711}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Site Contact/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ContactName" />
+                <FieldRef Name="Location" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Contact Name" Format="Dropdown" MaxLength="255" Name="ContactName" Required="TRUE" Title="Contact Name" Type="Text" ID="{579f9d09-7491-4b01-aac9-46cb4cdd31b2}" Version="2" StaticName="ContactName" SourceID="{{listid:Onsite contacts}}" ColName="nvarchar4" RowOrdinal="0" />
+            <Field Type="Lookup" DisplayName="Location" Required="FALSE" EnforceUniqueValues="FALSE" List="{listid:Locations}" ShowField="LocationName" UnlimitedLengthInDocumentLibrary="FALSE" ID="{64ec5d4d-2a0d-477f-abbe-6df2ab0ff850}" SourceID="{{listid:Onsite contacts}}" StaticName="Location" Name="Location" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="VisitLog" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/VisitLog" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/VisitLog/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/VisitLog/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/VisitLog/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{5305B023-E685-4722-8FFF-9974B20D5EC2}" Type="HTML" DisplayName="Next 30 Days" Url="{site}/Lists/VisitLog/Next30Days.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <And>
+                    <Geq>
+                      <FieldRef Name="ScheduledDate" />
+                      <Value Type="DateTime">
+                        <Today />
+                      </Value>
+                    </Geq>
+                    <Leq>
+                      <FieldRef Name="ScheduledDate" />
+                      <Value Type="DateTime">
+                        <Today OffsetDays="30" />
+                      </Value>
+                    </Leq>
+                  </And>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ScheduledDate" />
+                <FieldRef Name="Reviewer" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Completed" />
+                <FieldRef Name="Planned" />
+                <FieldRef Name="Overdue" />
+                <FieldRef Name="Calc_Status" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[{
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "debugMode": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "align-items": "center",
+      "text-align": "left",
+      "font-family": "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+      "font-weight": "600",
+      "font-size": "16px",
+      "color": "#605e5c",
+      "line-height": "1.31",
+      "padding-left": "48px",
+      "display": "flex",
+      "height": "60px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "135px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "font-size": "14px",
+              "color": "#444444",
+              "line-height": "19px"
+            },
+            "txtContent": "=toLocaleDateString([$ScheduledDate])"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "display": "=if(480 > @window.innerWidth, 'block', 'none')",
+              "width": "200px"
+            },
+            "txtContent": "[$Reviewer.title]"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "font-size": "12px",
+              "color": "#444444",
+              "line-height": "16px"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "txtContent": "Planned: "
+              },
+              {
+                "elmType": "span",
+                "style": {
+                  "color": "=if([$Planned],'#107c10', '#a80000')"
+                },
+                "txtContent": "=if([$Planned], 'Yes','No')"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "display": "=if(@window.innerWidth > 480, 'block', 'none')",
+          "width": "200px"
+        },
+        "txtContent": "[$Reviewer.title]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "width": "230px"
+        },
+        "txtContent": "[$Location.lookupValue]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "flex": "1"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "display": "inline-block",
+              "padding": "0 4px",
+              "color": "=if([$Calc_Status]=='Overdue','#a80000','#107c10')"
+            },
+            "attributes": {
+              "iconName": "=if([$Calc_Status]=='Overdue','Warning', if([$Calc_Status]=='Upcoming','Calendar','Completed'))"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "display": "=if(@window.innerWidth > 480, 'inline', 'none')"
+            },
+            "txtContent": "[$Calc_Status]"
+          }
+        ]
+      }
+    ]
+  }
+}]]></CustomFormatter>
+            </View>
+            <View Name="{BA16F344-67BA-4DD1-9FE9-1E063E78C5DC}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/VisitLog/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ScheduledDate" />
+                <FieldRef Name="VisitDate" />
+                <FieldRef Name="Reviewer" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Completed" />
+                <FieldRef Name="Planned" />
+                <FieldRef Name="Overdue" />
+                <FieldRef Name="Calc_ThisWeek" />
+                <FieldRef Name="Photos" />
+                <FieldRef Name="Notes" />
+                <FieldRef Name="Calc_Status" />
+                <FieldRef Name="VisitDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+            <View Name="{5DE423A0-B3CD-4936-B070-C3509D43ED5D}" DefaultView="TRUE" Type="HTML" DisplayName="This Week" Url="{site}/Lists/VisitLog/ThisWeek.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Calc_ThisWeek" />
+                    <Value Type="Boolean">1</Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ScheduledDate" />
+                <FieldRef Name="Reviewer" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Completed" />
+                <FieldRef Name="Planned" />
+                <FieldRef Name="Overdue" />
+                <FieldRef Name="Calc_Status" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[{
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "debugMode": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "align-items": "center",
+      "text-align": "left",
+      "font-family": "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+      "font-weight": "600",
+      "font-size": "16px",
+      "color": "#605e5c",
+      "line-height": "1.31",
+      "padding-left": "48px",
+      "display": "flex",
+      "height": "60px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "135px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "font-size": "14px",
+              "color": "#444444",
+              "line-height": "19px"
+            },
+            "txtContent": "=toLocaleDateString([$ScheduledDate])"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "display": "=if(480 > @window.innerWidth, 'block', 'none')",
+              "width": "200px"
+            },
+            "txtContent": "[$Reviewer.title]"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "font-size": "12px",
+              "color": "#444444",
+              "line-height": "16px"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "txtContent": "Planned: "
+              },
+              {
+                "elmType": "span",
+                "style": {
+                  "color": "=if([$Planned],'#107c10', '#a80000')"
+                },
+                "txtContent": "=if([$Planned], 'Yes','No')"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "display": "=if(@window.innerWidth > 480, 'block', 'none')",
+          "width": "200px"
+        },
+        "txtContent": "[$Reviewer.title]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "width": "230px"
+        },
+        "txtContent": "[$Location.lookupValue]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "flex": "1"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "display": "inline-block",
+              "padding": "0 4px",
+              "color": "=if([$Calc_Status]=='Overdue','#a80000','#107c10')"
+            },
+            "attributes": {
+              "iconName": "=if([$Calc_Status]=='Overdue','Warning', if([$Calc_Status]=='Upcoming','Calendar','Completed'))"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "display": "=if(@window.innerWidth > 480, 'inline', 'none')"
+            },
+            "txtContent": "[$Calc_Status]"
+          }
+        ]
+      }
+    ]
+  }
+}]]></CustomFormatter>
+            </View>
+            <View Name="{60EECA1F-3862-4CDD-A0C6-768A35F461BB}" MobileView="TRUE" Type="HTML" DisplayName="Previous 30 Days" Url="{site}/Lists/VisitLog/Previous30Days.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <And>
+                    <Geq>
+                      <FieldRef Name="ScheduledDate" />
+                      <Value Type="DateTime">
+                        <Today OffsetDays="-30" />
+                      </Value>
+                    </Geq>
+                    <Leq>
+                      <FieldRef Name="ScheduledDate" />
+                      <Value Type="DateTime">
+                        <Today />
+                      </Value>
+                    </Leq>
+                  </And>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ScheduledDate" />
+                <FieldRef Name="Reviewer" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Completed" />
+                <FieldRef Name="Planned" />
+                <FieldRef Name="Overdue" />
+                <FieldRef Name="Calc_Status" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[{
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "debugMode": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "align-items": "center",
+      "text-align": "left",
+      "font-family": "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+      "font-weight": "600",
+      "font-size": "16px",
+      "color": "#605e5c",
+      "line-height": "1.31",
+      "padding-left": "48px",
+      "display": "flex",
+      "height": "60px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "135px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "font-size": "14px",
+              "color": "#444444",
+              "line-height": "19px"
+            },
+            "txtContent": "=toLocaleDateString([$ScheduledDate])"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "display": "=if(480 > @window.innerWidth, 'block', 'none')",
+              "width": "200px"
+            },
+            "txtContent": "[$Reviewer.title]"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "font-size": "12px",
+              "color": "#444444",
+              "line-height": "16px"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "txtContent": "Planned: "
+              },
+              {
+                "elmType": "span",
+                "style": {
+                  "color": "=if([$Planned],'#107c10', '#a80000')"
+                },
+                "txtContent": "=if([$Planned], 'Yes','No')"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "display": "=if(@window.innerWidth > 480, 'block', 'none')",
+          "width": "200px"
+        },
+        "txtContent": "[$Reviewer.title]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "width": "230px"
+        },
+        "txtContent": "[$Location.lookupValue]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "flex": "1"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "display": "inline-block",
+              "padding": "0 4px",
+              "color": "=if([$Calc_Status]=='Overdue','#a80000','#107c10')"
+            },
+            "attributes": {
+              "iconName": "=if([$Calc_Status]=='Overdue','Warning', if([$Calc_Status]=='Upcoming','Calendar','Completed'))"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "display": "=if(@window.innerWidth > 480, 'inline', 'none')"
+            },
+            "txtContent": "[$Calc_Status]"
+          }
+        ]
+      }
+    ]
+  }
+}]]></CustomFormatter>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" StaticName="Title" DisplayName="Title" Required="FALSE"/>          
+            <Field DisplayName="Scheduled Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Name="ScheduledDate" Title="Scheduled Date" Type="DateTime" ID="{0068106e-1229-43db-8393-59ad09ffe487}" SourceID="{{listid:VisitLog}}" StaticName="ScheduledDate" ColName="datetime1" RowOrdinal="0" />
+            <Field DisplayName="Visit Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Name="VisitDate" Title="Visit Date" Type="DateTime" ID="{ee89951e-728b-4ee2-a345-73d2e183152f}" SourceID="{{listid:VisitLog}}" StaticName="VisitDate" ColName="datetime2" RowOrdinal="0" />
+            <Field AppendOnly="FALSE" DisplayName="Notes" Format="Dropdown" IsolateStyles="FALSE" Name="Notes" NumLines="6" RichText="FALSE" RichTextMode="Compatible" Title="Notes" Type="Note" ID="{c0899594-e314-4f17-8426-d5fd9fc343a4}" SourceID="{{listid:VisitLog}}" StaticName="Notes" ColName="ntext2" RowOrdinal="0" />
+            <Field DisplayName="Reviewer" Format="Dropdown" List="UserInfo" Name="Reviewer" Title="Reviewer" Type="User" UserSelectionMode="0" UserSelectionScope="0" ID="{a75a5999-bcb6-4fbe-83fa-c80f47cde97f}" SourceID="{{listid:VisitLog}}" StaticName="Reviewer" ColName="int1" RowOrdinal="0" />
+            <Field DisplayName="Completed" Format="Dropdown" Name="Completed" Title="Completed" Type="Boolean" ID="{829b6e9f-b275-4be1-b0ce-ce41041633df}" SourceID="{{listid:VisitLog}}" StaticName="Completed" ColName="bit1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field DisplayName="Planned" Format="Dropdown" Name="Planned" Title="Planned" Type="Boolean" ID="{35df7e85-fec9-4515-a034-193b7e313697}" SourceID="{{listid:VisitLog}}" StaticName="Planned" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field AppendOnly="FALSE" DisplayName="Photos" Format="Dropdown" IsolateStyles="FALSE" Name="Photos" NumLines="6" RichText="FALSE" RichTextMode="Compatible" Title="Photos" Type="Note" ID="{4c7fb99f-9f66-4d98-9c0b-385b2398ebee}" SourceID="{{listid:VisitLog}}" StaticName="Photos" ColName="ntext3" RowOrdinal="0" />
+            <Field DisplayName="Email Sent" Format="Dropdown" Name="EmailSent" Title="Email Sent" Type="Boolean" ID="{5bf89325-800b-4ba4-93a0-df446f909261}" SourceID="{{listid:VisitLog}}" StaticName="EmailSent" ColName="bit3" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Lookup" DisplayName="Site Contact" Required="FALSE" EnforceUniqueValues="FALSE" List="{listid:Onsite contacts}" ShowField="ContactName" UnlimitedLengthInDocumentLibrary="FALSE" ID="{9c3b75df-95d0-47af-b330-f03076545632}" SourceID="{{listid:VisitLog}}" StaticName="Site_x0020_Contact" Name="Site_x0020_Contact" ColName="int2" RowOrdinal="0" />
+            <Field Type="Lookup" DisplayName="Location" Required="FALSE" EnforceUniqueValues="FALSE" List="{listid:Locations}" ShowField="LocationName" UnlimitedLengthInDocumentLibrary="FALSE" ID="{ddeb965f-d70f-4d02-9eb4-10c445c3a32f}" SourceID="{{listid:VisitLog}}" StaticName="Location" Name="Location" ColName="int3" RowOrdinal="0" />
+            <Field Type="Lookup" DisplayName="Follow Up Action" Required="FALSE" EnforceUniqueValues="FALSE" List="{listid:Follow Up}" ShowField="FollowUpActions" UnlimitedLengthInDocumentLibrary="FALSE" ID="{2371ec65-2d7e-4bdc-9698-c50f39305afc}" SourceID="{{listid:VisitLog}}" StaticName="Follow_x0020_Up_x0020_Action" Name="Follow_x0020_Up_x0020_Action" ColName="int4" RowOrdinal="0" />
+            <Field Type="Calculated" DisplayName="Overdue" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Boolean" ReadOnly="TRUE" ID="{b92fd421-585c-4053-8cc6-b022d0208000}" SourceID="{{listid:VisitLog}}" StaticName="Overdue" Name="Overdue" ColName="sql_variant1" RowOrdinal="0" CustomFormatter="" Required="FALSE" Version="1">
+              <Formula>=AND(TODAY()&gt;[{fieldtitle:ScheduledDate}],NOT([{fieldtitle:Completed}]))</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="Calc_WeekViewEnd" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="DateTime" ReadOnly="TRUE" ID="{76da15a9-c34d-4eb0-a33c-0af4a4e16feb}" SourceID="{{listid:VisitLog}}" StaticName="Calc_WeekViewEnd" Name="Calc_WeekViewEnd" ColName="sql_variant2" RowOrdinal="0">
+              <Formula>=[{fieldtitle:ScheduledDate}]-WEEKDAY([{fieldtitle:ScheduledDate}],2)+7</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="Calc_WeekViewStart" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="DateTime" ReadOnly="TRUE" ID="{4159a2d3-76f9-4029-b10e-c251f171715e}" SourceID="{{listid:VisitLog}}" StaticName="Calc_WeekViewStart" Name="Calc_WeekViewStart" ColName="sql_variant3" RowOrdinal="0">
+              <Formula>=[{fieldtitle:Calc_WeekViewEnd}]-7</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="Calc_ThisWeek" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Boolean" ReadOnly="TRUE" ID="{bd9c0f9e-4497-4187-ad2a-7de27ce45676}" SourceID="{{listid:VisitLog}}" StaticName="Calc_ThisWeek" Name="Calc_ThisWeek" ColName="sql_variant4" RowOrdinal="0" CustomFormatter="" Required="FALSE" Version="6">
+              <Formula>=OR(AND([{fieldtitle:Calc_WeekViewEnd}]&gt;TODAY(),[{fieldtitle:Calc_WeekViewStart}]&lt;TODAY()),AND([{fieldtitle:Calc_WeekViewEnd}]&lt;TODAY(),Completed&lt;1))</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="Calc_Status" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{a7d9ad25-6d0f-4497-91dd-b30ed59da75e}" SourceID="{{listid:VisitLog}}" StaticName="Calc_Status" Name="Calc_Status" ColName="sql_variant5" RowOrdinal="0">
+              <Formula>=IF([{fieldtitle:Completed}]=TRUE,"{fieldtitle:Completed}",IF([{fieldtitle:ScheduledDate}]&lt;TODAY(),"Overdue","Upcoming"))</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="VisitPhotos" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/VisitPhotos" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/VisitPhotos/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/VisitPhotos/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/VisitPhotos/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{BAFDB15E-2C77-4FEC-A818-5D0CBA0DF1EA}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/VisitPhotos/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Photo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Photo" Format="Image" Name="Photo" Required="TRUE" Title="Photo" Type="URL" ID="{d9f395cd-c233-4c15-86aa-4b3e9f17e225}" SourceID="{{listid:VisitPhotos}}" StaticName="Photo" ColName="nvarchar4" RowOrdinal="0" ColName2="nvarchar5" RowOrdinal2="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Site Visit Tracker">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;457fe251-be92-4dec-9fd4-0870b0c061f8&quot;, &quot;title&quot;: &quot;List&quot;, &quot;description&quot;: &quot;List&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:false,&quot;selectedListId&quot;:&quot;{listid:VisitLog}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Lists/VisitLog&quot;,&quot;webRelativeListUrl&quot;:&quot;/Lists/VisitLog&quot;,&quot;webpartHeightKey&quot;:4,&quot;selectedViewId&quot;:&quot;{viewid:VisitLog,This Week}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;,&quot;hideCommandBar&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;This Week&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;5eebd188-4da9-4ee1-ba0e-da130246cf80&quot;, &quot;title&quot;: &quot;List&quot;, &quot;description&quot;: &quot;List&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:false,&quot;selectedListId&quot;:&quot;{listid:QuickLink}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Lists/QuickLink&quot;,&quot;webRelativeListUrl&quot;:&quot;/Lists/QuickLink&quot;,&quot;webpartHeightKey&quot;:1,&quot;selectedViewId&quot;:&quot;{viewid:QuickLink,All Items}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;,&quot;hideCommandBar&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot; &quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="PowerBIReportEmbed" JsonControlData="{&quot;id&quot;: &quot;58fcd18b-e1af-4b0a-b23b-422c2c52d5a2&quot;, &quot;instanceId&quot;: &quot;e29040cf-1655-4968-be48-c043f7a38f87&quot;, &quot;title&quot;: &quot;Power BI&quot;, &quot;description&quot;: &quot;Power BI&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;sanitizedReportEmbedCode&quot;:&quot;https://app.powerbi.com&quot;,&quot;showFilterPane&quot;:false,&quot;showNavPane&quot;:true,&quot;embedFrameAspectRatio&quot;:0,&quot;pageName&quot;:&quot;ReportSection&quot;,&quot;currentReportEmbedCode&quot;:&quot;https://app.powerbi.com&quot;,&quot;pageNames&quot;:[&quot;ReportSection&quot;],&quot;pageDisplayNames&quot;:[&quot;Page 1&quot;]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="58fcd18b-e1af-4b0a-b23b-422c2c52d5a2" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;1018fdbc-8dae-4c24-8108-dbaa26c9d457&quot;, &quot;title&quot;: &quot;List&quot;, &quot;description&quot;: &quot;List&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;selectedListId&quot;:&quot;{listid:PhotoLib}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/PhotoLib&quot;,&quot;webRelativeListUrl&quot;:&quot;/PhotoLib&quot;,&quot;webpartHeightKey&quot;:4,&quot;selectedViewId&quot;:&quot;{viewid:PhotoLib,Latest10}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;,&quot;hideCommandBar&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;PhotoLib&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|pattif@cand3.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;pattif@cand3.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;Physician&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|pattif@cand3.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Standard" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

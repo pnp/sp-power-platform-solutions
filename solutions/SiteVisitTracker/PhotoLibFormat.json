@@ -1,0 +1,31 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+    "hideColumnHeader": true,
+    "hideSelection": true,
+    "rowFormatter": {
+      "elmType": "button",
+      "customRowAction": {
+        "action": "defaultClick"
+      },
+      "attributes": {
+        "class": "ms-bgColor-white ms-fontColor-white--hover"
+      },
+      "style": {
+        "padding": "0 0 0 0",
+        "margin": "0 5px 0 5px",
+        "cursor": "pointer",
+        "float": "left"
+      },
+      "children": [
+        {
+          "elmType": "img",
+          "attributes": {
+            "src": "@thumbnail.large"
+          },
+          "style": {
+            "height": "128px"
+          }
+        }
+      ]
+    }
+  }

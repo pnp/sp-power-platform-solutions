@@ -1,0 +1,109 @@
+{
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "debugMode": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "align-items": "center",
+      "text-align": "left",
+      "font-family": "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+      "font-weight": "600",
+      "font-size": "16px",
+      "color": "#605e5c",
+      "line-height": "1.31",
+      "padding-left": "48px",
+      "display": "flex",
+      "height": "60px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "135px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "font-size": "14px",
+              "color": "#444444",
+              "line-height": "19px"
+            },
+            "txtContent": "=toLocaleDateString([$ScheduledDate])"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "display": "=if(480 > @window.innerWidth, 'block', 'none')",
+              "width": "200px"
+            },
+            "txtContent": "[$Reviewer.title]"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "font-size": "12px",
+              "color": "#444444",
+              "line-height": "16px"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "txtContent": "Planned: "
+              },
+              {
+                "elmType": "span",
+                "style": {
+                  "color": "=if([$Planned],'#107c10', '#a80000')"
+                },
+                "txtContent": "=if([$Planned], 'Yes','No')"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "display": "=if(@window.innerWidth > 480, 'block', 'none')",
+          "width": "200px"
+        },
+        "txtContent": "[$Reviewer.title]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "width": "230px"
+        },
+        "txtContent": "[$Location.lookupValue]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "flex": "1"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "display": "inline-block",
+              "padding": "0 4px",
+              "color": "=if([$Overdue] == 'Overdue','#a80000', '#107c10')"
+            },
+            "attributes": {
+              "iconName": "=if([$Overdue] == 'Overdue','Warning', 'Completed')"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "display": "=if(@window.innerWidth > 480, 'inline', 'none')"
+            },
+            "txtContent": "[$Overdue]"
+          }
+        ]
+      }
+    ]
+  }
+}
